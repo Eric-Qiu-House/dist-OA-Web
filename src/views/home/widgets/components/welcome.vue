@@ -24,7 +24,7 @@
 			</div> -->
 		</div>
 	</el-card>
-	<el-card header="图纸任务">
+	<el-card header="图纸任务11">
 		<el-header class="header-tabs">
 			<el-tabs type="card" v-model="groupId" @tab-change="tabChange">
 				<el-tab-pane label="所有" name="0"></el-tab-pane>
@@ -44,8 +44,6 @@
 								type="success">{{ props.row.id + ' - ' + props.row.state5 }}</el-link>
 
 							<div class="file-card">
-								<img src="https://via.placeholder.com/24x24?text=PDF" alt="file-icon"
-									class="file-icon" />
 								<div class="file-info">
 									<div class="file-name">Document.pdf</div>
 									<div class="file-type">pdf</div>
@@ -58,8 +56,6 @@
 							</div>
 
 							<div class="file-card">
-								<img src="https://via.placeholder.com/24x24?text=CAD" alt="file-icon"
-									class="file-icon" />
 								<div class="file-info">
 									<div class="file-name">Drawing.dwg</div>
 									<div class="file-type">cad</div>
@@ -72,8 +68,6 @@
 							</div>
 
 							<div class="file-card">
-								<img src="https://via.placeholder.com/24x24?text=Word" alt="file-icon"
-									class="file-icon" />
 								<div class="file-info">
 									<div class="file-name">Report.docx</div>
 									<div class="file-type">word</div>
@@ -86,8 +80,6 @@
 							</div>
 
 							<div class="file-card">
-								<img src="https://via.placeholder.com/24x24?text=Excel" alt="file-icon"
-									class="file-icon" />
 								<div class="file-info">
 									<div class="file-name">Spreadsheet.xlsx</div>
 									<div class="file-type">excel</div>
@@ -109,8 +101,6 @@
 							</el-link>
 
 							<div class="file-card">
-								<img src="https://via.placeholder.com/24x24?text=PDF" alt="file-icon"
-									class="file-icon" />
 								<div class="file-info">
 									<div class="file-name">Document.pdf</div>
 									<div class="file-type">pdf</div>
@@ -122,8 +112,6 @@
 							</div>
 
 							<div class="file-card">
-								<img src="https://via.placeholder.com/24x24?text=CAD" alt="file-icon"
-									class="file-icon" />
 								<div class="file-info">
 									<div class="file-name">Drawing.dwg</div>
 									<div class="file-type">cad</div>
@@ -170,7 +158,11 @@
 						<el-button-group>
 							<el-button text type="primary" size="small">上传</el-button>
 							<el-button text type="primary" size="small">提交</el-button>
-							<el-button text type="primary" size="small">审核</el-button>
+							<!-- <router-link :to="{
+								name: 'drawingCheck'
+							}"> -->
+								<el-button text type="primary" size="small">审核</el-button>
+							<!-- </router-link> -->
 							<el-button text type="primary" size="small">下载</el-button>
 						</el-button-group>
 					</template>
